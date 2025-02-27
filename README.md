@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 Clone the project repository to your local machine:
 ```bash
-git clone https://github.com/your-username/wardrobe-management-system.git
+git clone https://github.com/kidulajumba254/Wardrobe_Management_system.git
 cd wardrobe
 ```
 
