@@ -1,0 +1,23 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json", // Extend Vue's base configuration
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"], // Include app files
+  "exclude": ["node_modules", "dist", "**/__tests__/*"], // Exclude non-app files
+  "compilerOptions": {
+    "target": "ESNext", // Target the latest ECMAScript version
+    "module": "ESNext", // Use ES modules
+    "moduleResolution": "Node", // Use Node.js-style module resolution
+    "strict": true, // Enable all strict type-checking options
+    "jsx": "preserve", // Preserve JSX syntax
+    "sourceMap": true, // Generate source maps
+    "resolveJsonModule": true, // Allow importing JSON files
+    "esModuleInterop": true, // Enable ES module interoperability
+    "lib": ["ESNext", "DOM"], // Include ES and DOM libraries
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "paths": {
+      "@/*": ["./src/*"] // Map '@/' to the 'src/' directory
+    },
+    "skipLibCheck": true, // Skip type-checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file naming
+    "types": ["vite/client"] // Include Vite-specific types
+  }
+}
